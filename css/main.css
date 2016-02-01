@@ -1,3 +1,9 @@
+/**
+ *
+ * CSS minfied using https://cssminifier.com/
+ *
+ */
+
 * {
     padding: 0px;
     margin: 0px;
@@ -84,7 +90,6 @@ div.bottom div.twitter:hover {
 
 
 
-
 /**
  * 
  * CSS section :: myName
@@ -108,4 +113,140 @@ div.myname > div.mynameText {
     font-weight: bold;
     letter-spacing: 6px;
     margin-top: 180px;
+}
+
+
+
+
+/**
+ * 
+ * CSS section :: initialAnimation
+ */
+div.bottom div.github {
+    animation: anim-github 1.2s ease-in-out 1s 1;
+    -webkit-animation: anim-github 1.2s ease-in-out 1s 1;
+    -moz-animation: anim-github 1.2s ease-in-out 1s 1;
+}
+div.bottom div.stackoverflow {
+    animation: anim-stackoverflow 1.0s ease-in-out 1.4s 1;
+    -webkit-animation: anim-stackoverflow 1.0s ease-in-out 1.4s 1;
+    -moz-animation: anim-stackoverflow 1.0s ease-in-out 1.4s 1;
+}
+div.bottom div.google-plus {
+    animation: anim-google-plus 0.8s ease-in-out 1.8s 1;
+    -webkit-animation: anim-google-plus 0.8s ease-in-out 1.8s 1;
+    -moz-animation: anim-google-plus 0.8s ease-in-out 1.8s 1;
+}
+div.bottom div.twitter {
+    animation: anim-twitter 0.6s ease-in-out 2.2s 1;
+    -webkit-animation: anim-twitter 0.6s ease-in-out 2.2s 1;
+    -moz-animation: anim-twitter 0.6s ease-in-out 2.2s 1;
+}
+
+
+/* github */
+@keyframes anim-github {
+    50% {
+        background-color: #333;
+        box-shadow: 12px 2px 50px #aaa;
+        color: #fff;
+        transform: scale(1.1);
+    }
+}
+@-webkit-keyframes anim-github {
+    50% {
+        background-color: #333;
+        box-shadow: 12px 2px 50px #aaa;
+        color: #fff;
+        transform: scale(1.1);
+    }
+}
+@-moz-keyframes anim-github {
+    50% {
+        background-color: #333;
+        box-shadow: 12px 2px 50px #aaa;
+        color: #fff;
+        transform: scale(1.1);
+    }
+}
+
+
+/* stackoverflow */
+@keyframes anim-stackoverflow {
+    50% {
+        background-color: #f69c55;
+        box-shadow: 12px 2px 50px #aaa;
+        color: #fff;
+        transform: scale(1.1);
+    }
+}
+@-webkit-keyframes anim-stackoverflow {
+    50% {
+        background-color: #f69c55;
+        box-shadow: 12px 2px 50px #aaa;
+        color: #fff;
+        transform: scale(1.1);
+    }
+}
+@-moz-keyframes anim-stackoverflow {
+    50% {
+        background-color: #f69c55;
+        box-shadow: 12px 2px 50px #aaa;
+        color: #fff;
+        transform: scale(1.1);
+    }
+}
+
+
+/* google-plus */
+@keyframes anim-google-plus {
+    50% {
+        background-color: #d34836;
+        box-shadow: 12px 2px 50px #aaa;
+        color: #fff;
+        transform: scale(1.1);
+    }
+}
+@-webkit-keyframes anim-google-plus {
+    50% {
+        background-color: #d34836;
+        box-shadow: 12px 2px 50px #aaa;
+        color: #fff;
+        transform: scale(1.1);
+    }
+}
+@-moz-keyframes anim-google-plus {
+    50% {
+        background-color: #d34836;
+        box-shadow: 12px 2px 50px #aaa;
+        color: #fff;
+        transform: scale(1.1);
+    }
+}
+
+
+/* twitter */
+@keyframes anim-twitter {
+    50% {
+        background-color: #00aced;
+        box-shadow: 12px 2px 50px #aaa;
+        color: #fff;
+        transform: scale(1.1);
+    }
+}
+@-webkit-keyframes anim-twitter {
+    50% {
+        background-color: #00aced;
+        box-shadow: 12px 2px 50px #aaa;
+        color: #fff;
+        transform: scale(1.1);
+    }
+}
+@-moz-keyframes anim-twitter {
+    50% {
+        background-color: #00aced;
+        box-shadow: 12px 2px 50px #aaa;
+        color: #fff;
+        transform: scale(1.1);
+    }
 }
