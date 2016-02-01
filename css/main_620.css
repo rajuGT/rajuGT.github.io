@@ -1,0 +1,10 @@
+div.bottom-aligner {
+    width: 410px;
+    margin: 0 auto;
+    padding-top: 124px;
+}
+
+div.bottom div.followItem {
+    width: 200px;
+    margin: 0 0 10px;
+}

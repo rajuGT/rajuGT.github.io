@@ -25,14 +25,22 @@ div.top {
 div.bottom {
     background-color: #eee;
     height: 60%;
-    padding: 140px 6% 0;
     width: 100%;
 }
 
+div.bottom-aligner {
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 124px;
+}
+
 div.bottom a {
-    margin-right: 20px;
+    color: inherit;
+    display: inline-block;
+    height: 100%;
+    outline: 0 none;
     text-decoration: none;
-    outline: 0;
+    width: 100%;
 }
 
 
@@ -50,6 +58,7 @@ div.bottom div.followItem {
     color: #919191;
     display: inline-block;
     height: 130px;
+    margin: 0 18px 20px;
     transition: all 0.4s ease-out 0s;
     width: 260px;
 }
@@ -94,25 +103,30 @@ div.bottom div.twitter:hover {
  * 
  * CSS section :: myName
  */
+div.myname-container {
+    width: 100%;
+    position: absolute;
+}
 
 div.myname {
     background-color: #fff;
     border-radius: 50%;
     font-size: 34px;
     height: 300px;
-    margin: -210px 40% 0;
-    position: absolute;
+    margin: -200px auto 0;
     text-align: center;
     width: 300px;
 }
 
 div.myname > div.mynameText {
     color: #444;
+    display: inline-block;
     font-family: serif;
     font-size: 46px;
     font-weight: bold;
     letter-spacing: 6px;
-    margin-top: 180px;
+    margin-top: 166px;
+    position: relative;
 }
 
 
@@ -150,7 +164,7 @@ div.bottom div.twitter {
         background-color: #333;
         box-shadow: 12px 2px 50px #aaa;
         color: #fff;
-        transform: scale(1.1);
+        transform: scale(1.12);
     }
 }
 @-webkit-keyframes anim-github {
@@ -158,7 +172,7 @@ div.bottom div.twitter {
         background-color: #333;
         box-shadow: 12px 2px 50px #aaa;
         color: #fff;
-        transform: scale(1.1);
+        transform: scale(1.12);
     }
 }
 @-moz-keyframes anim-github {
@@ -166,7 +180,7 @@ div.bottom div.twitter {
         background-color: #333;
         box-shadow: 12px 2px 50px #aaa;
         color: #fff;
-        transform: scale(1.1);
+        transform: scale(1.12);
     }
 }
 
@@ -177,7 +191,7 @@ div.bottom div.twitter {
         background-color: #f69c55;
         box-shadow: 12px 2px 50px #aaa;
         color: #fff;
-        transform: scale(1.1);
+        transform: scale(1.12);
     }
 }
 @-webkit-keyframes anim-stackoverflow {
@@ -185,7 +199,7 @@ div.bottom div.twitter {
         background-color: #f69c55;
         box-shadow: 12px 2px 50px #aaa;
         color: #fff;
-        transform: scale(1.1);
+        transform: scale(1.12);
     }
 }
 @-moz-keyframes anim-stackoverflow {
@@ -193,7 +207,7 @@ div.bottom div.twitter {
         background-color: #f69c55;
         box-shadow: 12px 2px 50px #aaa;
         color: #fff;
-        transform: scale(1.1);
+        transform: scale(1.12);
     }
 }
 
@@ -204,7 +218,7 @@ div.bottom div.twitter {
         background-color: #d34836;
         box-shadow: 12px 2px 50px #aaa;
         color: #fff;
-        transform: scale(1.1);
+        transform: scale(1.12);
     }
 }
 @-webkit-keyframes anim-google-plus {
@@ -212,7 +226,7 @@ div.bottom div.twitter {
         background-color: #d34836;
         box-shadow: 12px 2px 50px #aaa;
         color: #fff;
-        transform: scale(1.1);
+        transform: scale(1.12);
     }
 }
 @-moz-keyframes anim-google-plus {
@@ -220,7 +234,7 @@ div.bottom div.twitter {
         background-color: #d34836;
         box-shadow: 12px 2px 50px #aaa;
         color: #fff;
-        transform: scale(1.1);
+        transform: scale(1.12);
     }
 }
 
@@ -231,7 +245,7 @@ div.bottom div.twitter {
         background-color: #00aced;
         box-shadow: 12px 2px 50px #aaa;
         color: #fff;
-        transform: scale(1.1);
+        transform: scale(1.12);
     }
 }
 @-webkit-keyframes anim-twitter {
@@ -239,7 +253,7 @@ div.bottom div.twitter {
         background-color: #00aced;
         box-shadow: 12px 2px 50px #aaa;
         color: #fff;
-        transform: scale(1.1);
+        transform: scale(1.12);
     }
 }
 @-moz-keyframes anim-twitter {
@@ -247,6 +261,6 @@ div.bottom div.twitter {
         background-color: #00aced;
         box-shadow: 12px 2px 50px #aaa;
         color: #fff;
-        transform: scale(1.1);
+        transform: scale(1.12);
     }
 }
