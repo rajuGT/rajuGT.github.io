@@ -43,7 +43,17 @@ div.bottom a {
     width: 100%;
 }
 
-
+div.favorite-tag {
+    color: #2962ff;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px auto 0;
+    width: 150px;
+    animation: anim-favorite-tag 3.4s ease-in-out 0s 1;
+    -webkit-animation: anim-favorite-tag 3.4s ease-in-out 0s 1;
+    -moz-animation: anim-favorite-tag 3.4s ease-in-out 0s 1;
+}
 
 
 
@@ -262,5 +272,49 @@ div.bottom div.twitter {
         box-shadow: 12px 2px 50px #aaa;
         color: #fff;
         transform: scale(1.12);
+    }
+}
+
+/* favorite-tag */
+@keyframes anim-favorite-tag {
+    0% {
+        transform: translateX(-1000px);
+    }
+    70% {
+        transform: translateX(-999px);
+    }
+    90% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+@-webkit-keyframes anim-favorite-tag {
+    0% {
+        transform: translateX(-1000px);
+    }
+    70% {
+        transform: translateX(-999px);
+    }
+    90% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
+}
+@-moz-keyframes anim-favorite-tag {
+    0% {
+        transform: translateX(-1000px);
+    }
+    70% {
+        transform: translateX(-999px);
+    }
+    90% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0px);
     }
 }
