@@ -1,320 +1,175 @@
-/**
- *
- * CSS minfied using https://cssminifier.com/
- *
- */
-
-* {
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
-
-html, body {
-    background-color: #ffffff;
+html,
+body {
+    width: 100%;
     height: 100%;
-    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: 'sans-serif';
+    font-weight: 400;
+}
+
+body {
+    position: relative;
+    
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    
+    justify-content: flex-start;
+    -webkit-justify-content: flex-start;
+    -moz-justify-content: flex-start;
+    
+    align-items: center;
+    -webkit-align-items: center;
+    -moz-align-items: center;
+}
+
+.top {
+    background-color: #fffff;
+}
+
+.bottom {
     width: 100%;
+    background-color: #110535;
 }
 
-div.top {
-    height: 40%;
+.top,
+.bottom {
+    flex:1 0 auto;
+    -webkit-flex: 1 0 auto;
+    -moz-flex: 1 0 auto;
+}
+
+.content-container {
+    position: relative;
     width: 100%;
+    background-color: #110535;
+    
+    display:flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+    
+    justify-content: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    
+    flex: 0 0 auto
+    -webkit-flex: 0 0 auto;
+    -moz-flex: 0 0 auto;
 }
 
-div.bottom {
-    background-color: #eee;
-    height: 60%;
+.content-container:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: #fff;
     width: 100%;
+    height: 92px
 }
 
-div.bottom-aligner {
-    width: 1200px;
-    margin: 0 auto;
-    padding-top: 124px;
+@media only screen and (max-width:360px) {
+    .content-container:before {
+        height: 76px
+    }
 }
 
-div.bottom a {
-    color: inherit;
+.content {
+    position: relative;
+    padding: 24px;
+    width: 300px;
+    color: rgba(255, 255, 255, .8);
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-size: 24px;
+    line-height: 32px
+}
+
+.content a {
     display: inline-block;
-    height: 100%;
-    outline: 0 none;
+    position: relative;
+    font-weight: 700;
+    color: #fff;
     text-decoration: none;
-    width: 100%;
+    z-index: 0
+}
+
+span.line {
+    width: 250px;
+    text-align: center;
+    margin: 16px auto
+}
+
+@media only screen and (max-width:360px) {
+    .content span {
+        margin: 8px
+    }
+}
+
+div.profile-pic {
+    width: 128px;
+    height: 128px;
+    background: url(../images/raju.jpg);
+    background-size: cover;
+    border-radius: 50%;
+
+    align-self:center;
+    -webkit-align-self: center;
+    -moz-align-self: center;
+    
+    border: 4px solid #fff
+}
+
+/* Decrease profile pic size for small screen */
+@media only screen and (max-width:360px) {
+    div.profile-pic {
+        width: 96px;
+        height: 96px
+    }
+}
+
+div.icons {
+    display: flex;
+    display: -webkit-flex;
+    display: -moz-flex;
+
+    flex-direction: row;
+    -webkit-flex-direction: row;
+    -moz-flex-direction: row;
+    
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    -moz-justify-content: space-between;
+}
+
+.icons div {
+    width: 32px;
+    height: 32px;
+    padding: 8px
+}
+
+div.github {
+    background-image: url('../images/github.png');
+}
+div.stackoverflow {
+    background-image: url(../images/stackoverflow.png);
+}
+div.twitter {
+    background-image: url(../images/twitter.png);
+}
+div.google-plus {
+    background-image: url(../images/google-plus.png);
 }
 
 div.favorite-tag {
-    color: #2962ff;
-    font-family: monospace;
-    font-size: 20px;
-    font-weight: bold;
-    margin: 10px auto 0;
-    width: 150px;
-    animation: anim-favorite-tag 3.4s ease-in-out 0s 1;
-    -webkit-animation: anim-favorite-tag 3.4s ease-in-out 0s 1;
-    -moz-animation: anim-favorite-tag 3.4s ease-in-out 0s 1;
-}
-
-
-
-/**
- * 
- * CSS section :: followItem
- */
-div.bottom div.followItem {
-    background-color: #fff;
-    border: 1px solid #dedcd7;
-    border-radius: 6px;
-    color: #919191;
-    display: inline-block;
-    height: 130px;
-    margin: 0 18px 20px;
-    transition: all 0.4s ease-out 0s;
-    width: 260px;
-}
-
-div.followItem div.fa {
-    font-size: 4em;
-    margin-left: 94px;
-    margin-top: 20px;
-    color: inherit;
-}
-
-div.followItem div.description {
-    font-size: 12px;
-    margin-left: 76px;
-    margin-top: 102px;
-    position: absolute;
-    color: inherit;
-}
-
-div.bottom div.github:hover {
-    background-color: #333;
-    color: #fff;
-}
-div.bottom div.stackoverflow:hover {
-    background-color: #f69c55;
-    color: #fff;
-}
-div.bottom div.google-plus:hover {
-    background-color: #d34836;
-    color: #fff;
-}
-div.bottom div.twitter:hover {
-    background-color: #00aced;
-    color: #fff;
-}
-
-
-
-
-
-/**
- * 
- * CSS section :: myName
- */
-div.myname-container {
-    width: 100%;
-    position: absolute;
-}
-
-div.myname {
-    background-color: #fff;
-    border-radius: 50%;
-    font-size: 34px;
-    height: 300px;
-    margin: -200px auto 0;
     text-align: center;
-    width: 300px;
-}
-
-div.myname > div.mynameText {
-    color: #444;
-    display: inline-block;
-    font-family: serif;
-    font-size: 46px;
-    font-weight: bold;
-    letter-spacing: 6px;
-    margin-top: 166px;
-    position: relative;
-}
-
-
-
-
-/**
- * 
- * CSS section :: initialAnimation
- */
-div.bottom div.github {
-    animation: anim-github 1.2s ease-in-out 1s 1;
-    -webkit-animation: anim-github 1.2s ease-in-out 1s 1;
-    -moz-animation: anim-github 1.2s ease-in-out 1s 1;
-}
-div.bottom div.stackoverflow {
-    animation: anim-stackoverflow 1.0s ease-in-out 1.4s 1;
-    -webkit-animation: anim-stackoverflow 1.0s ease-in-out 1.4s 1;
-    -moz-animation: anim-stackoverflow 1.0s ease-in-out 1.4s 1;
-}
-div.bottom div.google-plus {
-    animation: anim-google-plus 0.8s ease-in-out 1.8s 1;
-    -webkit-animation: anim-google-plus 0.8s ease-in-out 1.8s 1;
-    -moz-animation: anim-google-plus 0.8s ease-in-out 1.8s 1;
-}
-div.bottom div.twitter {
-    animation: anim-twitter 0.6s ease-in-out 2.2s 1;
-    -webkit-animation: anim-twitter 0.6s ease-in-out 2.2s 1;
-    -moz-animation: anim-twitter 0.6s ease-in-out 2.2s 1;
-}
-
-
-/* github */
-@keyframes anim-github {
-    50% {
-        background-color: #333;
-        box-shadow: 12px 2px 50px #aaa;
-        color: #fff;
-        transform: scale(1.12);
-    }
-}
-@-webkit-keyframes anim-github {
-    50% {
-        background-color: #333;
-        box-shadow: 12px 2px 50px #aaa;
-        color: #fff;
-        transform: scale(1.12);
-    }
-}
-@-moz-keyframes anim-github {
-    50% {
-        background-color: #333;
-        box-shadow: 12px 2px 50px #aaa;
-        color: #fff;
-        transform: scale(1.12);
-    }
-}
-
-
-/* stackoverflow */
-@keyframes anim-stackoverflow {
-    50% {
-        background-color: #f69c55;
-        box-shadow: 12px 2px 50px #aaa;
-        color: #fff;
-        transform: scale(1.12);
-    }
-}
-@-webkit-keyframes anim-stackoverflow {
-    50% {
-        background-color: #f69c55;
-        box-shadow: 12px 2px 50px #aaa;
-        color: #fff;
-        transform: scale(1.12);
-    }
-}
-@-moz-keyframes anim-stackoverflow {
-    50% {
-        background-color: #f69c55;
-        box-shadow: 12px 2px 50px #aaa;
-        color: #fff;
-        transform: scale(1.12);
-    }
-}
-
-
-/* google-plus */
-@keyframes anim-google-plus {
-    50% {
-        background-color: #d34836;
-        box-shadow: 12px 2px 50px #aaa;
-        color: #fff;
-        transform: scale(1.12);
-    }
-}
-@-webkit-keyframes anim-google-plus {
-    50% {
-        background-color: #d34836;
-        box-shadow: 12px 2px 50px #aaa;
-        color: #fff;
-        transform: scale(1.12);
-    }
-}
-@-moz-keyframes anim-google-plus {
-    50% {
-        background-color: #d34836;
-        box-shadow: 12px 2px 50px #aaa;
-        color: #fff;
-        transform: scale(1.12);
-    }
-}
-
-
-/* twitter */
-@keyframes anim-twitter {
-    50% {
-        background-color: #00aced;
-        box-shadow: 12px 2px 50px #aaa;
-        color: #fff;
-        transform: scale(1.12);
-    }
-}
-@-webkit-keyframes anim-twitter {
-    50% {
-        background-color: #00aced;
-        box-shadow: 12px 2px 50px #aaa;
-        color: #fff;
-        transform: scale(1.12);
-    }
-}
-@-moz-keyframes anim-twitter {
-    50% {
-        background-color: #00aced;
-        box-shadow: 12px 2px 50px #aaa;
-        color: #fff;
-        transform: scale(1.12);
-    }
-}
-
-/* favorite-tag */
-@keyframes anim-favorite-tag {
-    0% {
-        transform: translateX(-1000px);
-    }
-    70% {
-        transform: translateX(-999px);
-    }
-    90% {
-        transform: translateX(100px);
-    }
-    100% {
-        transform: translateX(0px);
-    }
-}
-@-webkit-keyframes anim-favorite-tag {
-    0% {
-        transform: translateX(-1000px);
-    }
-    70% {
-        transform: translateX(-999px);
-    }
-    90% {
-        transform: translateX(100px);
-    }
-    100% {
-        transform: translateX(0px);
-    }
-}
-@-moz-keyframes anim-favorite-tag {
-    0% {
-        transform: translateX(-1000px);
-    }
-    70% {
-        transform: translateX(-999px);
-    }
-    90% {
-        transform: translateX(100px);
-    }
-    100% {
-        transform: translateX(0px);
-    }
+    margin-top: 24px;
 }
