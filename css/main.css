@@ -118,6 +118,8 @@ div.profile-pic {
     width: 128px;
     height: 128px;
     background: url(../images/raju.jpg);
+    /* Used to fill color during onload */
+    background-color: #fff;
     background-size: cover;
     border-radius: 50%;
 
